@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Mon site vitrine</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+  <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/
+font-awesome.min.css" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="#about">A propos</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+<div class="carousel">
+  <div class="carousel-item">
+    <img src="tokyo.jpg" alt="Image 1">
+    <p>Tokyo</p>
+  </div>
+  <div class="carousel-item">
+    <img src="bali.jpeg" alt="Image 2">
+    <p>bali</p>
+  </div>
+  <div class="carousel-item">
+    <img src="newyork.jpg" alt="Image 3">
+    <p>Newyorks</p>
+  </div>
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+</div>
+
+<div class="carousel-indicator">
+  <span class="indicator" onclick="currentSlide(1)"></span>
+  <span class="indicator" onclick="currentSlide(2)"></span>
+  <span class="indicator" onclick="currentSlide(3)"></span>
+</div>
+
+
+  <section id="about">
+    <h1>A propos de nous</h1>
+    <p>Nous sommes une entreprise de voyage qui propose des forfaits vacances uniques et personnalisés.</p>
+  </section>
+
+  <section id="services">
+    <h1>Nos Services</h1>
+    <ul>
+      <li>Forfaits vacances tout compris</li>
+      <li>Circuits organisés</li>
+      <li>Réservation d'hôtels et de vols</li>
+    </ul>
+  </section>
+
+  <section id="contact">
+    <h1>Contactez-nous</h1>
+    <form action="submit-form.php" method="post">
+   <form>
+  <label for="name">Nom :</label>
+  <input type="text" id="name" name="name" required>
+
+  <label for="email">Email :</label>
+  <input type="email" id="email" name="email" required>
+
+  <label for="subject">Sujet :</label>
+  <input type="text" id="subject" name="subject" required>
+
+  <label for="message">Message :</label>
+  <textarea id="message" name="message" rows="6" required></textarea>
+
+  <input type="submit" value="Envoyer">
+</form>
+
+  </section>
+
+  <footer>
+    
+    <div class="social-menu">
+  <h1>Social Media Button Hover Effect</h1>
+  <ul>
+    
+    <li><a href="https://ineschiandotto.github.io/siteweb/"><i class="fa fa-github"></i></a></li>
+    <li><a href=""><i class="fa fa-facebook"></i></a></li>
+    <li><a href=""><i class="fa fa-twitter"></i></a></li>
+    <li><a href=""><i class="fa fa-instagram"></i></a></li>
+    <li><a href="https://www.youtube.com/watch?v=w32X24G0kLo&ab_channel=BusinessToolbox"><i class="fa fa-youtube"></i></a></li>
+    <li><a href=""><i class="fa fa-linkedin"></i></a></li>
+  </ul>
+</div>
+    Copyright &copy; 2023 Mon entreprise de voyage
+
+  </footer>
+</body>
+</html>
